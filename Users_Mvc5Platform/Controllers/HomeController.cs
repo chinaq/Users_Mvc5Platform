@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Users_Mvc5Platform.Infrastructure;
+using Microsoft.AspNet.Identity.Owin;
 
 namespace Users_Mvc5Platform.Controllers
 {
@@ -11,9 +13,14 @@ namespace Users_Mvc5Platform.Controllers
         // GET: Home
         public ActionResult Index()
         {
-            Dictionary<string, object> data = new Dictionary<string, object>();
-            data.Add("Placeholder", "Placeholder");
-            return View(data);
+            return View(UserManager.Users);
+        }
+
+        private AppUserManager UserManager {
+            get
+            {
+                return HttpContext.GetOwinContext().GetUserManager<AppUserManager>();
+            }
         }
     }
 }
