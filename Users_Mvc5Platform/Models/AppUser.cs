@@ -8,5 +8,6 @@ namespace Users_Mvc5Platform.Models
 {
     public class AppUser:IdentityUser
     {
+
     }
 }

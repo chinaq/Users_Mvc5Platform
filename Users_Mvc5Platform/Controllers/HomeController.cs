@@ -5,22 +5,21 @@ using System.Web;
 using System.Web.Mvc;
 using Users_Mvc5Platform.Infrastructure;
 using Microsoft.AspNet.Identity.Owin;
+using System.Threading.Tasks;
+using Users_Mvc5Platform.Models;
+using Microsoft.AspNet.Identity;
+
+
 
 namespace Users_Mvc5Platform.Controllers
 {
     public class HomeController : Controller
     {
-        // GET: Home
         public ActionResult Index()
         {
-            return View(UserManager.Users);
-        }
-
-        private AppUserManager UserManager {
-            get
-            {
-                return HttpContext.GetOwinContext().GetUserManager<AppUserManager>();
-            }
+            Dictionary<string, object> data = new Dictionary<string, object>();
+            data.Add("Placeholder", "Placeholder");
+            return View(data);
         }
     }
 }

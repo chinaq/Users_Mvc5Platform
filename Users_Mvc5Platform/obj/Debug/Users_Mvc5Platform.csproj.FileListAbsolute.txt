@@ -39,3 +39,4 @@ D:\users\terryq\documents\visual studio 2013\Projects\Users_Mvc5Platform\Users_M
 D:\users\terryq\documents\visual studio 2013\Projects\Users_Mvc5Platform\Users_Mvc5Platform\bin\Microsoft.Owin.Security.Cookies.xml
 D:\users\terryq\documents\visual studio 2013\Projects\Users_Mvc5Platform\Users_Mvc5Platform\bin\Microsoft.Owin.Security.OAuth.xml
 D:\users\terryq\documents\visual studio 2013\Projects\Users_Mvc5Platform\Users_Mvc5Platform\bin\Newtonsoft.Json.xml
+D:\users\terryq\documents\visual studio 2013\Projects\Users_Mvc5Platform\Users_Mvc5Platform\bin\zh-Hans\Microsoft.AspNet.Identity.Core.resources.dll

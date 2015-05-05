@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using Users_Mvc5Platform.Infrastructure.Users.Infrastructure;
 using Users_Mvc5Platform.Models;
 
 namespace Users_Mvc5Platform.Infrastructure
@@ -30,6 +31,22 @@ namespace Users_Mvc5Platform.Infrastructure
         {
             AppIdentityDbContext db = context.Get<AppIdentityDbContext>();              //iOwinContext.Get()返回注册在owin中的AppIdentityDbContext实例
             AppUserManager manager = new AppUserManager(new UserStore<AppUser>(db));        //UserStore是EF实现的IUserStore
+
+            manager.PasswordValidator = new CustomPasswordValidator
+            {
+                RequiredLength = 6,
+                RequireNonLetterOrDigit = false,
+                RequireDigit = false,
+                RequireLowercase = true,
+                RequireUppercase = true
+            };
+
+            manager.UserValidator = new CustomUserValidator(manager)
+            {
+                AllowOnlyAlphanumericUserNames = true,
+                RequireUniqueEmail = true
+            };
+
             return manager;
         }
 
