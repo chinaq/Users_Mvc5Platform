@@ -5,6 +5,9 @@
     <title>@ViewBag.Title</title>
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
     <link href="~/Content/bootstrap-theme.min.css" rel="stylesheet" />
+
+    @*<script src="~/Scripts/globalize.js"></script>*@
+
     <style>
         .container {
             padding-top: 10px;
@@ -16,6 +19,22 @@
     </style>
 </head>
 <body class="container">
+
+
+    <script>
+        //$.validator.methods.number = function (value, element) {
+        //    return this.optional(element) ||
+        //        !isNaN(Globalize.parseFloat(value));
+        //}
+        //$(document).ready(function () {
+        //    Globalize.culture('zh-CN');
+        //});
+    </script>
+
+
+
+
+
     <div class="container">
         @RenderBody()
     </div>

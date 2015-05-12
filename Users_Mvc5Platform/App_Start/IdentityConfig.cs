@@ -16,6 +16,8 @@ namespace Users_Mvc5Platform.App_Start
         {
             app.CreatePerOwinContext<AppIdentityDbContext>(AppIdentityDbContext.Create);    //为每个request创建一个AppIdentityDbContext实例
             app.CreatePerOwinContext<AppUserManager>(AppUserManager.Create);                //为每个request创建一个AppUserManager实例
+            app.CreatePerOwinContext<AppRoleManager>(AppRoleManager.Create);
+
             app.UseCookieAuthentication(new CookieAuthenticationOptions
             {
                 AuthenticationType = DefaultAuthenticationTypes.ApplicationCookie,      //使用cookie验证

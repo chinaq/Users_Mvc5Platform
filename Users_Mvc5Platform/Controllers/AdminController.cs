@@ -13,6 +13,7 @@ using Microsoft.AspNet.Identity;
 
 namespace Users_Mvc5Platform.Controllers
 {
+    [Authorize(Roles="Administrators")]
     public class AdminController : Controller
     {
 
