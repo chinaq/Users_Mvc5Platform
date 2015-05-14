@@ -40,3 +40,10 @@ D:\users\terryq\documents\visual studio 2013\Projects\Users_Mvc5Platform\Users_M
 D:\users\terryq\documents\visual studio 2013\Projects\Users_Mvc5Platform\Users_Mvc5Platform\bin\Microsoft.Owin.Security.OAuth.xml
 D:\users\terryq\documents\visual studio 2013\Projects\Users_Mvc5Platform\Users_Mvc5Platform\bin\Newtonsoft.Json.xml
 D:\users\terryq\documents\visual studio 2013\Projects\Users_Mvc5Platform\Users_Mvc5Platform\bin\zh-Hans\Microsoft.AspNet.Identity.Core.resources.dll
+D:\users\terryq\documents\visual studio 2013\Projects\Users_Mvc5Platform\Users_Mvc5Platform\obj\Debug\Users_Mvc5Platform.Migrations.Change_City_Property.resources
+D:\users\terryq\documents\visual studio 2013\Projects\Users_Mvc5Platform\Users_Mvc5Platform\obj\Debug\Users_Mvc5Platform.csproj.GenerateResource.Cache
+D:\users\terryq\documents\visual studio 2013\Projects\Users_Mvc5Platform\Users_Mvc5Platform\obj\Debug\Users_Mvc5Platform.Migrations.Change_My2City_Property.resources
+D:\users\terryq\documents\visual studio 2013\Projects\Users_Mvc5Platform\Users_Mvc5Platform\obj\Debug\Users_Mvc5Platform.Migrations.Change_My3City_Property.resources
+D:\users\terryq\documents\visual studio 2013\Projects\Users_Mvc5Platform\Users_Mvc5Platform\obj\Debug\Users_Mvc5Platform.Migrations.Change_back_to_City_Property.resources
+D:\users\terryq\documents\visual studio 2013\Projects\Users_Mvc5Platform\Users_Mvc5Platform\bin\Microsoft.Owin.Security.Google.dll
+D:\users\terryq\documents\visual studio 2013\Projects\Users_Mvc5Platform\Users_Mvc5Platform\bin\Microsoft.Owin.Security.Google.xml

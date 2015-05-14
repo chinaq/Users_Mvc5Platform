@@ -38,5 +38,39 @@ namespace Users_Mvc5Platform.Controllers
 
             return dict;
         }
+
+
+        [Authorize]
+        public ActionResult UserProps()
+        {
+            return View(CurrnetUser);
+        }
+
+
+        [Authorize]
+        [HttpPost]
+        public async Task<ActionResult> UserProps(Cities city) {
+            AppUser user = CurrnetUser;
+            user.City = city;
+            await UserManager.UpdateAsync(user);
+            return View(user);
+        }
+
+
+        private AppUser CurrnetUser
+        {
+            get
+            {
+                return UserManager.FindByName(HttpContext.User.Identity.Name);
+            }
+        }
+
+        private AppUserManager UserManager
+        {
+            get
+            {
+                return HttpContext.GetOwinContext().GetUserManager<AppUserManager>();
+            }
+        }
     }
 }

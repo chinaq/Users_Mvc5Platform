@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using Users_Mvc5Platform.Infrastructure;
+using Microsoft.Owin.Security.Google;
 
 namespace Users_Mvc5Platform.App_Start
 {
@@ -23,6 +24,9 @@ namespace Users_Mvc5Platform.App_Start
                 AuthenticationType = DefaultAuthenticationTypes.ApplicationCookie,      //使用cookie验证
                 LoginPath = new PathString("/Account/Login"),                           //未授权则登陆到login页
             });
+
+            app.UseExternalSignInCookie(DefaultAuthenticationTypes.ExternalCookie);
+            app.UseGoogleAuthentication();
         }
     }
 }
